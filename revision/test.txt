@@ -1,0 +1,196 @@
+✔ Compiling tests: fsoares (my own)
+ℹ Testing:
+ft_isalpha      : OK
+ft_isdigit      : OK
+ft_isalnum      : OK
+ft_isascii      : OK
+ft_isprint      : OK
+ft_strlen       : OK
+ft_memset       : OK
+ft_bzero        : OK
+ft_memcpy       : OK
+ft_memmove      : OK
+ft_strlcpy      : OK
+ft_strlcat      : KO
+ft_toupper      : OK
+ft_tolower      : OK
+ft_strchr       : KO
+ft_strrchr      : KO
+ft_strncmp      : OK
+ft_memchr       : OK
+ft_memcmp       : OK
+ft_strnstr      : KO
+ft_atoi         : KO
+ft_calloc       : OK
+ft_strdup       : OK
+ft_substr       : 16.KO Abort
+ft_strjoin      : OK
+ft_strtrim      : KO
+ft_split        : 1.KO Abort
+ft_itoa         : OK
+ft_strmapi      : OK
+ft_striteri     : OK
+ft_putchar_fd   : OK
+ft_putstr_fd    : OK
+ft_putendl_fd   : OK
+ft_putnbr_fd    : OK
+ft_lstnew       : OK
+ft_lstadd_front : OK
+ft_lstsize      : OK
+ft_lstlast      : OK
+ft_lstadd_back  : OK
+ft_lstdelone    : OK
+ft_lstclear     : OK
+ft_lstiter      : OK
+ft_lstmap       : OK
+
+ Testing:
+ft_isalpha      : [OK] 
+ft_isdigit      : [OK] 
+ft_isalnum      : [OK] 
+ft_isascii      : [OK] 
+ft_isprint      : [OK] 
+ft_strlen       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_memset       : [OK] [OK] [OK] [NO CRASH] [OK] [OK] [OK] 
+[no crash]: your memset does not segfault when null parameter is sent !
+
+ft_bzero        : [OK] [OK] [OK] [OK] 
+ft_memcpy       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [CRASH] 
+[crash]: your memcpy does not behave well with NULL as both params with size
+
+ft_memmove      : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strlcpy      : [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strlcat      : [FAILED] [FAILED] [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] [FAILED] [OK] [OK] 
+[fail]: your strlcat does not work with basic input
+[fail]: your strlcat does not work with basic input
+[fail]: your strlcat does not work with a size of 0
+[fail]: your strlcat return value is false
+
+ft_toupper      : [OK] 
+ft_tolower      : [OK] 
+ft_strchr       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strrchr      : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strncmp      : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_memchr       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [NO CRASH] 
+[no crash]: your memchr does not segfault when null param is sent
+
+ft_memcmp       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strnstr      : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [FAILED] [FAILED] [OK] [OK] [OK] [OK] [OK] 
+[fail]: your strnstr does not work with empty strings
+[fail]: your strnstr does not work with empty strings and 0 length
+
+ft_atoi         : [OK] [OK] [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+[fail]: your atoi is not working with blanks
+
+ft_calloc       : [OK] [OK] [OK] [OK] [OK] 
+ft_strdup       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_substr       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [CRASH] 
+[crash]: your substr does not work when start >= ft_strlen(s)
+
+ft_strjoin      : [OK] [OK] [OK] [OK] [OK] 
+ft_strtrim      : [FAILED] [FAILED] [FAILED] [CRASH] [OK] [KO] [FAILED] [OK] [FAILED] 
+[fail]: your strtrim does not work with basic input
+[fail]: your strtrim does not work with basic input
+[fail]: your strtrim does not work with basic input
+[crash]: your strtrim does not work with full blank input
+[KO]: your strtrim did not allocate the good size so the \0 test may be false
+[fail]: your strtrim does not allocate memory
+[fail]: your strtrim does not set \0 to the end of the string
+
+ft_split        : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [CRASH] [OK] [CRASH] 
+[crash]: your split does not work with basic input
+[crash]: your split does not work with basic input
+
+ft_itoa         : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strmapi      : [OK] [OK] [OK] [OK] [OK] 
+ft_striteri     : [OK] [OK] 
+ft_putchar_fd   : [OK] [OK] 
+ft_putstr_fd    : [OK] [OK] 
+ft_putendl_fd   : [OK] [OK] 
+ft_putnbr_fd    : [OK] [OK] [OK] [OK] [OK] 
+ft_lstnew       : [OK] [OK] [OK] [OK] 
+ft_lstadd_front : [OK] [OK] [OK] 
+ft_lstsize      : [OK] [OK] 
+ft_lstlast      : [OK] [OK] 
+ft_lstadd_back  : [OK] [OK] [OK] 
+ft_lstdelone    : [OK] 
+ft_lstclear     : [OK] [OK] [OK] 
+ft_lstiter      : [OK] 
+ft_lstmap       : [OK] 
+
+
+Problem compiling tests
+✔ Compiling tests: libft-unit-test (https://github.com/alelievr/libft-unit-test)
+ℹ Testing:
+ft_isalpha      : [OK] 
+ft_isdigit      : [OK] 
+ft_isalnum      : [OK] 
+ft_isascii      : [OK] 
+ft_isprint      : [OK] 
+ft_strlen       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_memset       : [OK] [OK] [OK] [NO CRASH] [OK] [OK] [OK] 
+[no crash]: your memset does not segfault when null parameter is sent !
+
+ft_bzero        : [OK] [OK] [OK] [OK] 
+ft_memcpy       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [CRASH] 
+[crash]: your memcpy does not behave well with NULL as both params with size
+
+ft_memmove      : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strlcpy      : [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strlcat      : [FAILED] [FAILED] [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] [FAILED] [OK] [OK] 
+[fail]: your strlcat does not work with basic input
+[fail]: your strlcat does not work with basic input
+[fail]: your strlcat does not work with a size of 0
+[fail]: your strlcat return value is false
+
+ft_toupper      : [OK] 
+ft_tolower      : [OK] 
+ft_strchr       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strrchr      : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strncmp      : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_memchr       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [NO CRASH] 
+[no crash]: your memchr does not segfault when null param is sent
+
+ft_memcmp       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strnstr      : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [FAILED] [FAILED] [OK] [OK] [OK] [OK] [OK] 
+[fail]: your strnstr does not work with empty strings
+[fail]: your strnstr does not work with empty strings and 0 length
+
+ft_atoi         : [OK] [OK] [OK] [OK] [FAILED] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+[fail]: your atoi is not working with blanks
+
+ft_calloc       : [OK] [OK] [OK] [OK] [OK] 
+ft_strdup       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_substr       : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [CRASH] 
+[crash]: your substr does not work when start >= ft_strlen(s)
+
+ft_strjoin      : [OK] [OK] [OK] [OK] [OK] 
+ft_strtrim      : [FAILED] [FAILED] [FAILED] [CRASH] [OK] [KO] [FAILED] [OK] [FAILED] 
+[fail]: your strtrim does not work with basic input
+[fail]: your strtrim does not work with basic input
+[fail]: your strtrim does not work with basic input
+[crash]: your strtrim does not work with full blank input
+[KO]: your strtrim did not allocate the good size so the \0 test may be false
+[fail]: your strtrim does not allocate memory
+[fail]: your strtrim does not set \0 to the end of the string
+
+ft_split        : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [CRASH] [OK] [CRASH] 
+[crash]: your split does not work with basic input
+[crash]: your split does not work with basic input
+
+ft_itoa         : [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] [OK] 
+ft_strmapi      : [OK] [OK] [OK] [OK] [OK] 
+ft_striteri     : [OK] [OK] 
+ft_putchar_fd   : [OK] [OK] 
+ft_putstr_fd    : [OK] [OK] 
+ft_putendl_fd   : [OK] [OK] 
+ft_putnbr_fd    : [OK] [OK] [OK] [OK] [OK] 
+ft_lstnew       : [OK] [OK] [OK] [OK] 
+ft_lstadd_front : [OK] [OK] [OK] 
+ft_lstsize      : [OK] [OK] 
+ft_lstlast      : [OK] [OK] 
+ft_lstadd_back  : [OK] [OK] [OK] 
+ft_lstdelone    : [OK] 
+ft_lstclear     : [OK] [OK] [OK] 
+ft_lstiter      : [OK] 
+ft_lstmap       : [OK] 
